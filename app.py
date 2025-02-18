@@ -2,6 +2,9 @@ import os
 import dash
 import dash_bootstrap_components as dbc
 from DatabricksChatbot import DatabricksChatbot
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Ensure environment variable is set correctly
 serving_endpoint = os.getenv('SERVING_ENDPOINT')
